@@ -1474,6 +1474,49 @@
     </param>
   </block>
   <block>
+    <key>lora_message_socket_sink</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1088, 480)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>lora_message_socket_sink_0</value>
+    </param>
+    <param>
+      <key>ip</key>
+      <value>127.0.0.1</value>
+    </param>
+    <param>
+      <key>layer</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>port</key>
+      <value>40868</value>
+    </param>
+  </block>
+  <block>
     <key>osmosdr_source</key>
     <param>
       <key>alias</key>
@@ -1926,6 +1969,96 @@
       <value>None</value>
     </param>
   </block>
+  <connection>
+    <source_block_id>lora_lora_receiver_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_0_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_0_1</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_0_1_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_0_1_0_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_0_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_0_1</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_0_1_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_0_1_0_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_1</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_2</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_2_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>lora_lora_receiver_1_2_0_0</source_block_id>
+    <sink_block_id>lora_message_socket_sink_0</sink_block_id>
+    <source_key>frames</source_key>
+    <sink_key>in</sink_key>
+  </connection>
   <connection>
     <source_block_id>osmosdr_source_0</source_block_id>
     <sink_block_id>lora_lora_receiver_0</sink_block_id>
